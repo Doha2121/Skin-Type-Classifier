@@ -22,6 +22,7 @@ This project leverages a **ResNet-50** model fine-tuned on a custom dataset of f
   
 The model was trained using **PyTorch** and integrated into a **FastAPI** backend, then wrapped in a **Streamlit** frontend for easy, interactive use.
 
+Dataset Link : https://universe.roboflow.com/skins-aup8m/skin-type-l6qra/dataset/10
 ---
 
 ## ⚙️ Tech Stack
