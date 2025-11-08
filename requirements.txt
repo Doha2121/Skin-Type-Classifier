@@ -1,0 +1,10 @@
+# requirements.txt
+fastapi
+uvicorn
+torch
+torchvision
+Pillow
+requests
+streamlit
+numpy
+python-multipart
