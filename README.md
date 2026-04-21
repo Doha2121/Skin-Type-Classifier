@@ -1,69 +1,61 @@
-# 🧴 Skin Type Classifier
+# Skin Type Classifier
 
-A deep learning–based web app that classifies human **skin type (Dry, Oily, Normal, or Sensitive)** from an uploaded or live-captured image.  
-Built using **ResNet-50**, **FastAPI**, and **Streamlit**, and deployed on [Hugging Face Spaces](https://huggingface.co/spaces/Doha000/Skin_Type_Classifier).
+**AI web app that instantly classifies human skin type (Dry, Oily, Normal, Sensitive) from a photo or webcam.**
+
+Built with **PyTorch (ResNet-50)**, **FastAPI**, and **Streamlit**. Fully deployed and ready for real clients.
+
+👉 **[Live Demo – Try it now!](https://huggingface.co/spaces/Doha000/Skin_Type_Classifier)**
+
+---
+
+## 🎯 Why This Project Matters (Business Value)
+- Perfect for **beauty shops, cosmetics stores, dermatology apps, and skincare e-commerce** in Egypt.
+- Clients can use it to recommend products based on skin type automatically.
+- High demand on Nafezly & Kafiil: “أداة AI تحدد نوع البشرة وتقترح منتجات”.
+
+---
+
+## ✨ Features
+- Upload photo or use webcam
+- Real-time prediction with confidence score
+- Clean, modern Streamlit UI
+- FastAPI backend (ready to scale)
+- Deployed on Hugging Face Spaces
+
+---
+
+## 🛠 Tech Stack
+
+| Category       | Tools                              |
+|----------------|------------------------------------|
+| Deep Learning  | PyTorch, torchvision, ResNet-50    |
+| Backend        | FastAPI                            |
+| Frontend       | Streamlit                          |
+| Deployment     | Hugging Face Spaces                |
+| Others         | Pillow, NumPy, Requests            |
+
+---
+
+## 📊 Dataset
+Custom dataset from Roboflow: [Skin Type Dataset](https://universe.roboflow.com/skins-aup8m/skin-type-l6qra/dataset/10)
 
 ---
 
 ## 🚀 Live Demo
-
-👉 **Try it here:** [Hugging Face Space – Skin Type Classifier](https://huggingface.co/spaces/Doha000/Skin_Type_Classifier)
-
-Upload a skin image or take one using your webcam, and the app will instantly predict your skin type.
+[Click here to test the app](https://huggingface.co/spaces/Doha000/Skin_Type_Classifier)
 
 ---
 
-## 🧠 Project Overview
 
-This project leverages a **ResNet-50** model fine-tuned on a custom dataset of facial skin patches to classify:
-- 🧼 **Dry Skin**
-- 💧 **Oily Skin**
-- 🌿 **Normal Skin**
-  
-The model was trained using **PyTorch** and integrated into a **FastAPI** backend, then wrapped in a **Streamlit** frontend for easy, interactive use.
-
-Dataset Link : https://universe.roboflow.com/skins-aup8m/skin-type-l6qra/dataset/10
----
-
-## ⚙️ Tech Stack
-
-| Category | Tools & Libraries |
-|-----------|------------------|
-| **Frontend** | Streamlit |
-| **Backend** | FastAPI |
-| **Deep Learning** | PyTorch, torchvision |
-| **Model** | ResNet-50 (fine-tuned) |
-| **Deployment** | Hugging Face Spaces |
-| **Other** | Pillow, Requests, NumPy |
-
----
-## 🧩 How It Works
-
-1. **Upload or Capture an Image**
-   - The user uploads a facial skin image or captures one using the webcam.
-2. **Preprocessing**
-   - The image is resized, normalized, and transformed into a tensor.
-3. **Model Prediction**
-   - The ResNet-50 model outputs probabilities for each skin type.
-4. **Result Display**
-   - The predicted skin type is shown with a confidence score.
-## 🧰 Installation & Local Setup
-
-To run locally:
-
+## How to Run Locally
 ```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/Doha000/Skin_Type_Classifier.git
-cd Skin_Type_Classifier
-
-# 2️⃣ Install dependencies
+git clone https://github.com/Doha2121/Skin-Type-Classifier.git
+cd Skin-Type-Classifier
 pip install -r requirements.txt
 
-# 3️⃣ Run the FastAPI backend
+# Terminal 1: Run backend
 cd app
 uvicorn main:app --reload
 
-# 4️⃣ Run the Streamlit frontend (in another terminal)
+# Terminal 2: Run frontend
 streamlit run skin_app.py
-Your local app will be available at http://localhost:8501
-
